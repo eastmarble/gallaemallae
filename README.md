@@ -18,6 +18,9 @@
   <img src="https://img.shields.io/badge/Resilience4j-RateLimiter-FF4F00?style=flat-square" alt="Resilience4j"/>
   <img src="https://img.shields.io/badge/KakaoPay-FFCD00?style=flat-square&logo=kakaotalk&logoColor=black" alt="KakaoPay"/>
   <img src="https://img.shields.io/badge/TossPayments-0064FF?style=flat-square&logo=toss&logoColor=white" alt="TossPayments"/>
+  <img src="https://img.shields.io/badge/Security-Spring%20Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white" alt="Spring Security"/>
+  <img src="https://img.shields.io/badge/Auth-Session%20%2B%20OAuth2-2563EB?style=flat-square" alt="Session OAuth2"/>
+  <img src="https://img.shields.io/badge/OAuth-Google%20%7C%20Kakao%20%7C%20Naver-4285F4?style=flat-square" alt="OAuth Providers"/>
 </p>
 
 <p align="center">
