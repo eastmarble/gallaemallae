@@ -177,6 +177,10 @@ flowchart TD
 | **Resilience4j** | RateLimiter, Retry | 외부 API 초당 호출 제어 및 선제적 429 방어 |
 | **Spring WebClient** | Reactive WebClient | 대용량 외부 공공 API 비동기/논블로킹 호출 |
 | **Komoran & KNU** | 3.0 | 리뷰 텍스트 형태소 분석 및 긍·부정 감성 분류 |
+| **Spring Security** |	Session Authentication |	SecurityContext 세션 저장, URL 접근 제어, CSRF 보호 |
+| **Spring OAuth2 Client** |	Social Login |	Google·Kakao·Naver 소셜 로그인 |
+| **BCrypt** |	Password & Verification Code |	비밀번호와 이메일 인증번호 단방향 해시 |
+| **Spring Mail** |	SMTP |	회원가입·비밀번호 재설정·재활성화 인증번호 발송 |
 
 ### Frontend & Media
 | 기술 | 버전 / 용도 | 상세 설명 |
