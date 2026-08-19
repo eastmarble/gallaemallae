@@ -214,13 +214,12 @@ com.gnagnoohc.travel
 │   ├── service/                # 관리자 재검증과 심사 상태 전이
 │   ├── mapper/                 # 행 잠금과 조건부 상태 변경
 │   └── dto/
-├── config/
-│   └── SecurityConfig.java     # 세션, OAuth2, CSRF, URL 접근 정책
 ├── batch/                      # 공공데이터 수집 및 동기화 배치 파이프라인
 ├── business/                   # 사업자 대시보드, 마감 관리, 업소 관리
 ├── common/                     # 공통 예외 처리, 유틸, 인터셉터
 ├── community/                  # 커뮤니티 게시판, 후기, 콜라주/슬라이더 에디터
 ├── config/                     # WebClientConfig, MyBatisConfig
+│   └── SecurityConfig.java     # 세션, OAuth2, CSRF, URL 접근 정책
 ├── mypage/                     # 마이페이지 (회원정보, 찜목록, 예약내역)
 ├── reservation/                # 예약 생성, 상태 스케줄러, 결제(카카오/토스)
 └── tour/                       # 여행/숙박/맛집 도메인, 검색, 필터링
