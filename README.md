@@ -198,15 +198,21 @@ flowchart TD
 
 ```text
 com.gnagnoohc.travel
-├── auth/                       # 인증/인가 (로그인, 회원가입, 이메일 인증)
+├── auth/                       # 회원가입, 로컬·소셜 인증, 계정 복구
+│   ├── controller/             # 로그인, 회원가입, OAuth 성공·실패 흐름
+│   ├── service/                # 로컬 인증, 이메일 인증, 소셜 계정 연동
+│   ├── security/               # OAuth 인증 요청과 임시 인증 상태 관리
+│   ├── mapper/                 # 회원·로컬 인증·소셜 인증 DB 접근
+│   ├── dto/                    # 요청·응답 및 세션 인증 정보
+│   └── model/
+├── admin/                      # 관리자 사업자 인증 심사
+│   ├── controller/             # 대시보드, 신청 조회, 승인·반려
+│   ├── service/                # 관리자 재검증과 심사 상태 전이
+│   ├── mapper/                 # 행 잠금과 조건부 상태 변경
+│   └── dto/
+├── config/
+│   └── SecurityConfig.java     # 세션, OAuth2, CSRF, URL 접근 정책
 ├── batch/                      # 공공데이터 수집 및 동기화 배치 파이프라인
-│   ├── client/                 # TourApiClient (WebClient 통신)
-│   ├── converter/              # TourDataConverter, HashtagGenerator
-│   ├── dto/                    # 공공데이터 응답 DTO 및 법정동 DTO
-│   ├── helper/                 # TourApiHelper (연쇄 수집, 요금/좌표 파싱)
-│   ├── scheduler/               # TourBatchScheduler (새벽 3시 자동 실행)
-│   ├── service/                 # TourApiService (증분 동기화, 큐 셀렉팅)
-│   └── validator/               # TourValidator (블랙리스트, 부실데이터 검증)
 ├── business/                   # 사업자 대시보드, 마감 관리, 업소 관리
 ├── common/                     # 공통 예외 처리, 유틸, 인터셉터
 ├── community/                  # 커뮤니티 게시판, 후기, 콜라주/슬라이더 에디터
@@ -214,9 +220,6 @@ com.gnagnoohc.travel
 ├── mypage/                     # 마이페이지 (회원정보, 찜목록, 예약내역)
 ├── reservation/                # 예약 생성, 상태 스케줄러, 결제(카카오/토스)
 └── tour/                       # 여행/숙박/맛집 도메인, 검색, 필터링
-    ├── controller/
-    ├── mapper/
-    └── model/
 ```
 
 ---
